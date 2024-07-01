@@ -20,20 +20,26 @@
 
 # Project information
 site_name: My Docs
-site_url: https://squidfunk.github.io/mkdocs-material-example-versioning/
+site_url: https://pabloFuente.github.io/mkdocs-material-example-versioning/
 site_author: Martin Donath
 
 # Repository
-repo_name: squidfunk/mkdocs-material-example-versioning
-repo_url: https://github.com/squidfunk/mkdocs-material-example-versioning
+repo_name: pabloFuente/mkdocs-material-example-versioning
+repo_url: https://github.com/pabloFuente/mkdocs-material-example-versioning
 edit_uri: ""
 
 # Configuration
 theme:
   name: material
   custom_dir: overrides
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.instant.prefetch
 
 # Customization
 extra:
   version:
     provider: mike
+    default: latest
+    alias: true
